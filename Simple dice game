@@ -1,0 +1,24 @@
+import random
+
+print("Welcome to the dice game!")
+
+counter = 1
+
+choice = "Y"
+
+while choice == "Y":
+
+    print("Roll #{}".format(counter))
+
+    die1 = random.randint(1, 6)
+    die2 = random.randint(1, 6)
+
+    print("You have rolled {} and {}".format(die1, die2))
+
+    if die1 == die2:
+        print("You rolled doubles!")
+
+    choice = input("Do you want to roll again Y or N? ").upper()
+
+counter += 1
+print("Goodbye!")
